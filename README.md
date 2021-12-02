@@ -41,8 +41,7 @@ So I can see all the information in the note
 
 ## Mockup of the UI
 
-![Notes app home page mockup](resources/notes-home-page-mock-up.png)
-![Notes app note page mockup](resources/notes-note-page-mock-up.png)
+![image](https://user-images.githubusercontent.com/75613073/144448826-2e2f7d1b-b92c-469d-8a3f-59015e98701d.png)
 
 Below is a more detailed guidance on how you can approach the project in different steps:
 
