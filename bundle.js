@@ -6,8 +6,15 @@
   // scripts/postnotedata.js
   var require_postnotedata = __commonJS({
     "scripts/postnotedata.js"(exports, module) {
-      function postNoteData2() {
-        console.log("heelo");
+      function postNoteData2(noteTitle2, noteContent2) {
+        const data = { title: noteTitle2, content: noteContent2 };
+        fetch("http://localhost:3000/notes", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(data)
+        }).then((response) => response.json());
       }
       module.exports = postNoteData2;
     }
@@ -20,6 +27,6 @@
   var btn = document.querySelector("#btn");
   btn.addEventListener("click", (e) => {
     e.preventDefault();
-    postNoteData();
+    postNoteData(noteTitle.value, noteContent.value);
   });
 })();
